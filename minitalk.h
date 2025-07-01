@@ -19,6 +19,6 @@
 # include "ft_printf/ft_printf.h"
 
 void	send_char(pid_t server_pid, unsigned char c);
-void	handle_signal(int sig, siginfo_t *info, void *context);
+void	handle_signal(int sig);
 
 #endif
