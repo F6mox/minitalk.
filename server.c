@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "minitalk.h"
+
 void	handle_signal(int sig)
 {
 	static unsigned char	current_char = 0;
@@ -31,7 +33,7 @@ int	main(void)
 {
 	pid_t	pid;
 
-	pid = getpid()
+	pid = getpid();
 	ft_printf ("Server PID: %d\n", pid);
 	signal(SIGUSR1, handle_signal);
 	signal(SIGUSR2, handle_signal);
